@@ -3,10 +3,14 @@ html,body {height: 100%;}
 
 @import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
 @font-face {
     font-family: "Mayberry";
     src: url('../fonts/Mayberry\ W02\ Bold.ttf');
 }
+
+
 
 .container {max-width: 1280px; margin: 0 auto; padding: 0 2%;}
 
@@ -87,7 +91,7 @@ header li:last-of-type {
 
 .banner {
     width: 100%; height: 70vh;
-    background-image: url('../images/poplar-forest-in-fuente-vaqueros-granada-andalusia-spain.png');
+    background-image: url('../images/banner.jpg');
     background-position: center;
     background-size: cover;
     position: relative;
@@ -110,15 +114,122 @@ header li:last-of-type {
     color: #92570F;
 }
 
+.banner .button-container {
+    width: 100%;
+    justify-content: center;
+}
+
 .banner a.button {
-    position: absolute; top: 90%; right: 50%;
-    transform: translate(-50% -50%);
+    position: absolute; top: 90%;;
+    transform: translateY(-50%);
 }
 
 /* FINAL BANNER ------------------------------------------------- */
 
 section.icons {
 
+}
+
+section.icons .container {
+    padding: 20px 2%;
+    justify-content: space-between;
+}
+
+section.icons .diferencial-single {
+
+}
+
+section.icons .diferencial-single .circle {
+    width: 200px; height: 200px; border-radius: 50%;
+    background-color: #0A960A;
+    margin: 20px auto;
+}
+
+section.icons .diferencial-single p {
+    padding: 0 40px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+section.icons .diferencial-single .circle i {
+    font-size: 110px;
+    color: white;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* FINAL ICONS ------------------------------------------------- */
+
+section.form {
+    width: 100%;
+    background-image: url('../images/form-background.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 652px;
+}
+
+section.form .container.flex {
+    align-items: center;
+}
+
+section.form .form-box {
+    background: rgba(255, 255, 255, 0.584);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.2px);
+    -webkit-backdrop-filter: blur(5.2px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 345px;
+    height: 456px;
+    margin-top: 98px;
+}
+
+section.form .form-box h2 {
+    font-size: 24px;
+    font-family: 'Roboto' sans-serif;
+    text-align: center;
+    background-color: white;
+    border-radius: 16px 16px 0 0;
+    padding: 12px;
+}
+
+section.form .form-box form {
+    text-align: center;
+    margin-top: 30px;
+}
+
+section.form .form-box a {
+    display: block;
+}
+
+section.form .form-box input,
+section.form .form-box textarea,
+section.form .form-box a {
+    width: 80%;
+    margin: 12px 0;
+    padding: 10px 8px;
+    border-radius: 8px;
+}
+
+section.form .form-box input,
+section.form .form-box textarea {
+    border: 0;
+    outline: 0;
+}
+
+section.form .form-box textarea {
+    height: 142px;
+    resize: none;
+}
+
+section.form .form-box a {
+    background-color: #0A960A;
+    color: white;
+    margin: 0 auto;
+    font-family: 'Roboto' sans-serif;
+    font-size: 18px;
 }
 
 footer {
@@ -143,12 +254,16 @@ footer {
     .w50, .w33 {
         width: 100%;
     }
+
 }
 
 /*? Screen >= 0px < 576px Extra Small Phone ------------------------------------------------------------------------------------------------------------ */
 
 @media screen and (max-width:576px){
-    
+    section.form .form-box {
+        width: 90%;
+        margin: 98px auto 0;
+    }
 }
 
 /*? ---------------------------------------------------------------------------------------------------------------------------------------------------- */
