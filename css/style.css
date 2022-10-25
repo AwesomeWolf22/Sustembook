@@ -149,6 +149,7 @@ section.icons .diferencial-single p {
     padding: 0 40px;
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
+    text-align: center;
 }
 
 section.icons .diferencial-single .circle i {
@@ -230,6 +231,53 @@ section.form .form-box a {
     margin: 0 auto;
     font-family: 'Roboto' sans-serif;
     font-size: 18px;
+}
+
+/* FINAL FORM ------------------------------------------------- */
+
+section.cards {
+
+}
+
+section.cards .container.flex {
+    justify-content: space-around;
+    padding: 40px 2%;
+}
+
+section.cards .card {
+    width: 350px; height: 300px; margin: 20px;
+    border: 1px solid #ccc;
+    -webkit-box-shadow: 0px 0px 18px 4px rgba(0,0,0,0.39); 
+    box-shadow: 0px 0px 18px 4px rgba(0,0,0,0.39);
+    position: relative;
+    overflow: hidden;
+}
+
+section.cards .card .img {
+    width: 100%; height: 150px;
+    background-position: center;
+    background-size: cover;
+    border-bottom: 1px solid #ccc;
+}
+
+section.cards .card h2 {
+    font-family: 'Mayberry';
+    text-transform: uppercase;
+    padding: 12px;
+}
+
+section.cards .card p {
+    padding: 12px;
+}
+
+section.cards .card a {
+    margin-top: auto;
+    padding: 12px;
+    width: 100%;
+    background-color: white;
+    border-top: 1px solid #ccc;
+    bottom: 0;
+    position: absolute;
 }
 
 footer {
