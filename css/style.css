@@ -45,7 +45,7 @@ header {
     width: 100%;
     background: linear-gradient(0deg, rgba(255,255,255,0.68) 0%, rgba(255,255,255,0.58) 100%);
     border-bottom: 1px solid #ccc;
-    position: absolute; z-index: 2;
+    position: fixed; z-index: 2;
     padding: 8px 0;
 }
 
@@ -59,13 +59,13 @@ header .logo {
 
 header .links a {
     color: white;
-    text-shadow: 0px 4px 10px rgba(150, 150, 150, 1);
+    text-shadow: 1px 1px 20px rgba(0, 0, 0, 1);
     text-decoration: none;
     font-size: 18px;
 }
 
 header .links a:hover {
-    text-shadow: 0px 2px 15px rgba(0, 0, 0, 1);
+    text-shadow: 1px 1px 11px rgba(0, 0, 0, 1);
     transition: 0.2s;
 }
 
@@ -216,7 +216,7 @@ section.form .form-box a {
 
 section.form .form-box input,
 section.form .form-box textarea {
-    border: 0;
+    border: 1px solid #ccc;
     outline: 0;
 }
 
@@ -226,11 +226,12 @@ section.form .form-box textarea {
 }
 
 section.form .form-box a {
-    background-color: #0A960A;
+    background-color: #92570F;
     color: white;
     margin: 0 auto;
     font-family: 'Roboto' sans-serif;
     font-size: 18px;
+    text-decoration: none;
 }
 
 /* FINAL FORM ------------------------------------------------- */
@@ -278,6 +279,8 @@ section.cards .card a {
     border-top: 1px solid #ccc;
     bottom: 0;
     position: absolute;
+    color: #0A960A;
+    text-decoration: none;
 }
 
 /* FINAL CARDS ------------------------------------------------- */
@@ -373,6 +376,8 @@ section.sobre .pessoa .links a:first-of-type {
 
 section.sobre .pessoa .links a {
     padding: 0 4px;
+    color: #0A960A;
+    text-decoration: none;
 }
 
 section.sobre .pessoa .links a:last-of-type {
@@ -393,6 +398,11 @@ footer .sub-footer {
     width: 100%; padding: 4px 0;
     background-color: #999;
     text-align: center;
+}
+
+footer .sub-footer a {
+    color: #92570F;
+    text-decoration: none;
 }
 
 
@@ -463,6 +473,15 @@ footer .sub-footer {
 
     section.sobre .pessoas .pessoa {
         height: 300px;
+    }
+
+    header .logo {
+        padding-bottom: 12px;
+    }
+
+    header .links {
+        width: 100%;
+        text-align: center;
     }
 
 }

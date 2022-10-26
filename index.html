@@ -30,12 +30,8 @@
     <link rel="stylesheet" href="css/style.css">
     <!--JavaScripts-->
     <script src="js/jquery-3.6.1.min.js"></script>
-    <script src="js/jquery.mobile-1.4.5.min.js"></script>
-    <script src="js/jquery.mask.min.js"></script>
-    <script src="js/jquery-ui.min.js"></script>
-    <script src="js/jssocials.min.js"></script>
-    <script src="js/chart.min.js"></script>
-    <script src="js/functions.js"></script>
+    <script src="js/mensagem.js"></script>
+    <script src="js/goto.js"></script>
 </head>
 <body>
 
@@ -45,7 +41,7 @@
 
             <div class="logo links">
 
-                <a href="#">
+                <a href="index.html">
                     <h2>Sustembook</h2>
                 </a>
 
@@ -53,10 +49,10 @@
 
             <ul class="links">
 
-                <li><a href="">HOME</a></li>
-                <li><a href="">SOBRE NÓS</a></li>
-                <li><a href="">CONTATO</a></li>
-                <li><a href="">DOAÇÃO</a></li>
+                <li><a goto="home" href="" class="go">HOME</a></li>
+                <li><a goto="contato" href="" class="go">CONTATO</a></li>
+                <li><a goto="dicas" href="" class="go">DICAS</a></li>
+                <li><a goto="sobre" href="" class="go">SOBRE NÓS</a></li>
 
             </ul>
 
@@ -64,7 +60,7 @@
 
     </header>
 
-    <div class="banner">
+    <div class="banner" id="home">
 
         <div class="container">
 
@@ -76,7 +72,7 @@
 
             <div class="button-container flex">
 
-                <a href="#" class="button">Saiba Mais</a>
+                <a href="#" goto="sobre" class="button go">Saiba Mais</a>
 
             </div><!--button-container-->
 
@@ -141,7 +137,7 @@
 
     </section><!--icons-->
 
-    <section class="form">
+    <section class="form" id="contato">
 
         <div class="container flex">
 
@@ -155,9 +151,9 @@
     
                     <input type="email" name="email" id="email" placeholder="E-mail">
     
-                    <textarea name="mensagem" id="mensagem" placeholder="Mensagem"></textarea>
+                    <textarea name="mensagem" id="msg" placeholder="Mensagem" ></textarea>
     
-                    <a>Enviar</a>
+                    <a href="" class="chamar">Chamar</a>
     
                 </form>
     
@@ -167,7 +163,7 @@
 
     </section><!--form-->
 
-    <section class="cards">
+    <section class="cards" id="dicas">
 
         <div class="container flex">
 
@@ -188,7 +184,7 @@
                     Utilizar de forma consciente
                 </p>
 
-                <a href="#">Saiba Mais!</a>
+                <a href="images/os-3-rs-da-sustemtabilidade.pdf#page=1" target="_blank">Saiba Mais!</a>
 
             </div><!--card-->
 
@@ -212,7 +208,7 @@
                     caseira.
                 </p>
 
-                <a href="#">Saiba Mais!</a>
+                <a href="images/reaproveite-o-lixo-organico.pdf#page=1" target="_blank">Saiba Mais!</a>
 
             </div><!--card-->
 
@@ -231,7 +227,7 @@
                     do lixo urbano é composto de papel.
                 </p>
 
-                <a href="#">Saiba Mais!</a>
+                <a href="images/vamos-reutilizar.pdf#page=1" target="_blank">Saiba Mais!</a>
 
             </div><!--card-->
 
@@ -239,7 +235,7 @@
 
     </section><!--cards-->
 
-    <section class="sobre">
+    <section class="sobre" id="sobre">
 
         <div class="container">
 
@@ -253,34 +249,9 @@
     
                         <div class="header flex">
     
-                            <div class="img" style="background-image: url('images/PlaceHolder.png');"></div>
+                            <div class="img" style="background-image: url('images/mariana-perfil.jpeg');"></div>
     
-                            <h2>Nome da pessoa</h2>
-    
-                        </div><!--header-->
-    
-                        <div class="info">
-    
-                            <p>Consectetur incididunt commodo nulla cupidatat qui velit proident commodo labore minim. Laboris do cupidatat sint aliquip labore quis consequat offici</p>
-    
-                        </div><!--info-->
-    
-                        <div class="links">
-    
-                            <a href="#">Linkedin</a>
-                            <a href="#">Outro Link</a>
-    
-                        </div><!--links-->
-    
-                    </div><!--pessoa-->
-
-                    <div class="pessoa">
-    
-                        <div class="header flex">
-    
-                            <div class="img" style="background-image: url('images/PlaceHolder.png');"></div>
-    
-                            <h2>Nome da pessoa</h2>
+                            <h2>Mariana Ferreira Rezende</h2>
     
                         </div><!--header-->
     
@@ -303,9 +274,34 @@
     
                         <div class="header flex">
     
-                            <div class="img" style="background-image: url('images/PlaceHolder.png');"></div>
+                            <div class="img" style="background-image: url('images/vanessa-perfil.jpeg');"></div>
     
-                            <h2>Nome da pessoa</h2>
+                            <h2>Vanessa Silva de Oliveira</h2>
+    
+                        </div><!--header-->
+    
+                        <div class="info">
+    
+                            <p>Consectetur incididunt commodo nulla cupidatat qui velit proident commodo labore minim. Laboris do cupidatat sint aliquip labore quis consequat offici</p>
+    
+                        </div><!--info-->
+    
+                        <div class="links">
+    
+                            <a href="#">Linkedin</a>
+                            <a href="#">Outro Link</a>
+    
+                        </div><!--links-->
+    
+                    </div><!--pessoa-->
+
+                    <div class="pessoa">
+    
+                        <div class="header flex">
+    
+                            <div class="img" style="background-image: url('images/stephane-perfil.jpeg');"></div>
+    
+                            <h2>Stephane Kawanne Soares Silva</h2>
     
                         </div><!--header-->
     
@@ -332,9 +328,9 @@
     
                         <div class="header flex">
     
-                            <div class="img" style="background-image: url('images/PlaceHolder.png');"></div>
+                            <div class="img" style="background-image: url('images/ingrid-perfil.jpg');"></div>
     
-                            <h2>Nome da pessoa</h2>
+                            <h2>Ingrid Santos da Silva</h2>
     
                         </div><!--header-->
     
@@ -357,9 +353,9 @@
     
                         <div class="header flex">
     
-                            <div class="img" style="background-image: url('images/PlaceHolder.png');"></div>
+                            <div class="img" style="background-image: url('images/vitoria-perfil.jpeg');"></div>
     
-                            <h2>Nome da pessoa</h2>
+                            <h2>Vitória Gomes</h2>
     
                         </div><!--header-->
     
