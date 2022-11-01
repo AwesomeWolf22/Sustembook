@@ -131,12 +131,21 @@ section.icons {
 }
 
 section.icons .container {
-    padding: 20px 2%;
+    padding: 30px 2%;
     justify-content: space-between;
 }
 
-section.icons .diferencial-single {
+section.icons h1 {
+    width: 100%;
+    text-align: center;
+    font-family: 'Mayberry';
+    text-transform: uppercase;
+    color: #0A960A;
+    font-size: 28px;
+}
 
+section.icons .diferencial-single {
+    margin: 30px 0;
 }
 
 section.icons .diferencial-single .circle {
@@ -242,7 +251,7 @@ section.cards {
 
 section.cards .container.flex {
     justify-content: space-around;
-    padding: 40px 2%;
+    padding: 60px 2%;
 }
 
 section.cards .card {
@@ -252,6 +261,11 @@ section.cards .card {
     box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.82);
     position: relative;
     overflow: hidden;
+}
+
+section.cards .card:hover h2 {
+    transform: scale(1.2);
+    transition: 0.1s;
 }
 
 section.cards .card .img {
@@ -265,6 +279,11 @@ section.cards .card h2 {
     font-family: 'Mayberry';
     text-transform: uppercase;
     padding: 12px;
+    color: white;
+    text-shadow: 0px 0px 8px black;
+    position: absolute;
+    top: 5px;
+    left: 5px;
 }
 
 section.cards .card p {
@@ -289,6 +308,7 @@ section.sobre {
     background-image: url('../images/sobre-background.jpg');
     width: 100%; min-height: 480px;
     background-size: cover; background-position: center;
+    padding-top: 20px;
 }
 
 section.sobre .container.w33 {
@@ -301,10 +321,19 @@ section.sobre .logo {
     background-repeat: no-repeat;
     width: 200px; height: 200px;
     border-radius: 50%;
-    position: relative; left: 50%; transform: translateX(-50%);
-    top: 20px;
+    margin: 0 auto;
     -webkit-box-shadow: 0px 0px 23px -3px rgba(0,0,0,0.54); 
     box-shadow: 0px 0px 23px -3px rgba(0,0,0,0.54); 
+}
+
+section.sobre h1 {
+    text-align: center;
+    padding-top: 18px;
+    font-family: 'Mayberry';
+    font-size: 32px;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 16px black;
 }
 
 section.sobre .pessoas {
@@ -380,6 +409,10 @@ section.sobre .pessoa .links a {
     text-decoration: none;
 }
 
+section.sobre .pessoa .links a:hover {
+    text-decoration: underline;
+}
+
 section.sobre .pessoa .links a:last-of-type {
     padding-right: 0;
 }
@@ -388,12 +421,53 @@ section.sobre .pessoa .links a:last-of-type {
 
 footer {
     width: 100%; min-height: 100px;
+    background: rgb(204,204,204);
     background-color: #ccc;
     position: relative;
 }
 
+footer > .container.flex {
+    padding: 20px 2%;
+}
+
+footer > .container.flex .w50 {
+    padding: 0px 20px;
+}
+
+footer > .container.flex .w50:last-of-type {
+    border-left: 1px solid black;
+}
+
+footer > .container.flex .w50 h3,
+footer > .container.flex .w50 h4,
+footer > .container.flex .w50 ul,
+footer > .container.flex .w50 p {
+    margin-bottom: 10px;
+}
+
+footer > .container.flex .w50 li {
+    margin-left: 20px;
+}
+
+footer > .container.flex form {
+    margin-bottom: 20px;
+}
+
+footer > .container.flex input[type=email] {
+    padding-left: 8px;
+    height: 28px;
+    width: calc(100% - 100px);
+    border: 0;
+}
+
+footer > .container.flex input[type=submit] {
+    height: 28px;
+    width: 100px;
+    border: 0;
+}
+
 footer .sub-footer {
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%; padding: 4px 0;
     background-color: #999;
@@ -403,6 +477,10 @@ footer .sub-footer {
 footer .sub-footer a {
     color: #92570F;
     text-decoration: none;
+}
+
+footer .sub-footer a:hover {
+    text-decoration: underline;
 }
 
 
@@ -444,6 +522,10 @@ footer .sub-footer a {
 @media screen and (max-width:768px){
     .w50, .w33 {
         width: 100%;
+    }
+
+    footer > .container.flex .w50:last-of-type {
+        border: 0;
     }
 
     section.sobre .pessoas .pessoa {
