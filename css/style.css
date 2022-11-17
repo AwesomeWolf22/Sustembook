@@ -362,7 +362,7 @@ section.sobre .pessoas-wraper.flex {
 }
 
 section.sobre .pessoa {
-    width: 570px; height: 200px;
+    width: 570px; height: 160px;
     border-radius: 50px 0 50px 0;
     position: relative;
     overflow: hidden;
@@ -386,13 +386,6 @@ section.sobre .pessoa .img {
 
 section.sobre .pessoa .header {
     align-items: center;
-    padding: 10px;
-}
-
-section.sobre .pessoa .info {
-    padding-top: 10px;
-    overflow: hidden;
-    font-family: 'Roboto' sans-serif;
     padding: 10px;
 }
 
