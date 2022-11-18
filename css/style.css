@@ -76,18 +76,26 @@ header .links a:hover {
 header ul {
     margin-left: auto;
     list-style: none;
+    justify-content: center;
+}
+
+header ul .line {
+    width: 100%;
+    justify-content: center;
+    margin: 4px 0;
 }
 
 header li {
     display: inline-block;
-    margin: 0 5px;
+    margin: 0 8px;
+    position: relative;
 }
 
-header li:first-of-type {
+header ul > li:first-of-type {
     margin-left: 0;
 }
 
-header li:last-of-type {
+header ul> li:last-of-type {
     margin-right: 0;
 }
 
@@ -653,6 +661,15 @@ header.center-logo {
         margin: 20px auto;
     }
 
+    header .logo {
+        padding-bottom: 12px;
+    }
+
+    header .links {
+        width: 100%;
+        text-align: center;
+    }
+
 }
 
 /*? Screen >= 768px < 992px Medium TABLET -------------------------------------------------------------------------------------------------------------- */
@@ -686,6 +703,10 @@ header.center-logo {
         margin-top: 16px;
     }
 
+    section.fazemos .w50.flex {
+        padding-top: 30px;
+    }
+
 }
 
 /*? Screen >= 0px < 576px Extra Small Phone ------------------------------------------------------------------------------------------------------------ */
@@ -705,14 +726,7 @@ header.center-logo {
         height: 300px;
     }
 
-    header .logo {
-        padding-bottom: 12px;
-    }
-
-    header .links {
-        width: 100%;
-        text-align: center;
-    }
+    
 
 }
 
