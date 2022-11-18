@@ -19,6 +19,12 @@ html,body {height: 100%;}
 
 .clear {clear: both;}
 
+*:not(i) {
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: normal;
+}
+
+
 /* ! CLASSES PADÃO ! ----------------------------------------------------------------------------------------------------------------------------------- */
 
 a.button {
@@ -158,18 +164,10 @@ section.icons h2 {
 
 section.icons .diferencial-single p {
     padding: 0 40px;
-    font-size: 16px;
-    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 200;
     text-align: center;
     margin: 15px 0 0;
-}
-
-section.icons .diferencial-single li {
-    font-size: 16px;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    margin: 4px 0;
-    list-style: none;
 }
 
 section.icons .diferencial-single .circle i {
@@ -422,6 +420,98 @@ section.sobre .pessoa .links a:last-of-type {
 }
 
 /* FINAL SOBRE ------------------------------------------------- */
+
+section.somos-sustembook {
+    padding: 50px 0;
+}
+
+section.somos-sustembook h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 32px;
+}
+
+section.somos-sustembook p {
+    text-align: center;
+    margin: 20px auto 0;
+    max-width: 860px;
+    font-size: 26px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+}
+
+section.somos-sustembook i {
+    font-size: 20px;
+    color: #0A960A;
+    margin: 4px;
+}
+
+/* FINAL SOMOS-SUSTEMBOOK ------------------------------------------------- */
+
+section.fazemos {
+    padding: 50px 0px;
+    background-color: #0A960A;
+}
+
+section.fazemos h1 {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    text-align: center;
+    color: white;
+}
+
+section.fazemos p {
+    margin: 20px auto 0;
+    font-size: 26px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    text-align: center;
+    color: white;
+}
+
+section.fazemos .w50.flex {
+    align-items: center;
+    justify-content: center;
+    padding: 0 2%;
+    flex-direction: column;
+}
+
+section.fazemos .mini-fazemos {
+    margin: 18px 0;
+}
+
+section.fazemos .mini-fazemos .ico {
+    width: 42px; height: 42px;
+    justify-content: center;
+    align-items: center;
+}
+
+section.fazemos .mini-fazemos .ico i {
+    font-size: 42px;
+    padding: 0 12px;
+    color: white;
+}
+
+section.fazemos .mini-fazemos .info {
+    height: 42px; width: 140px;
+    padding-left: 18px;
+    color: white;
+}
+
+section.fazemos .mini-fazemos .info span {
+    width: 100%;
+}
+
+section.fazemos .mini-fazemos .info span:nth-of-type(1) {
+    font-size: 22px;
+}
+
+
+/* FINAL FAZEMOS ------------------------------------------------- */
 
 footer {
     width: 100%; min-height: 100px;
